@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/a77514ce9d.js" crossorigin="anonymous"></script>
+    <title>QuizApp</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+                <img src="./img/Question.svg" alt="">
+                     <h1>Quiz App With Fixed Time</h1>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit exercitationem suscipit ad dolores repellendus quo explicabo accusamus debitis quisquam consequuntur!.</p>
+                     <h1>Quiz App With Fixed Time</h1>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ea eveniet doloribus enim aliquid, fugiat molestiae ab repellat totam recusandae?</p>
+                     <button class="btn">Quiz Start</button>
+                  </div>
+      
+      <div class="Rules">
+        <h1>Some Rules of this Quiz</h1>
+               <div class="Rules-border"></div>
+        <ol>
+          <li>You will have only <span>15 seconds</span> per each question.</li>
+          <li>Once you select your answer, it can't be undone.</li>
+          <li>You can't select any option once time goes off.</li>
+          <li>You can't exit from the Quiz while you're playing..</li>
+          <li>You'll get points on the basis of your correct answers.</li>
+        </ol>
+
+             <div class="button-exti-start">
+                <button class="exitbtn">Exit</button>
+                <button class="startbtn">start</button>
+             </div>
+      </div>
+
+      <!-- first html start quiz -->
+
+      <div class="html-quiz">
+        <div class="html-quiz-time">
+          <h1>Start Exam</h1>
+          <div class="timeof">
+            <h1>time left</h1>
+            <p class="secends">00</p>
+          </div>
+        </div>
+        <div class="dynamic-time"></div>
+
+        <div class="html-question">
+          <!-- <span>1.What Does HTML Stand For?</span> -->
+        </div>
+
+        <div class="html-list">
+          <div class="options"></div>
+        </div>
+        <div class="html-footer">
+          <div class="html-footer-dyna"> </div>
+
+          <button class="next-que">Next Que</button>
+        </div>
+      </div>
+
+
+            <!-- quiz result wrapper selected -->
+
+            <div class="result_box">
+               <div class="result_image">
+                <img src="./img/winner.svg" alt="">
+               </div>
+
+            <div class="result_content">
+              
+                <h1>You Have Finished This Exam</h1>
+                <div class="got-result">
+                  
+                </div>
+              
+             
+               <div class="result-btn">
+                  <button class="replay">Replay</button>
+                  <button class="quit"> Quit Quiz</button>
+               </div>
+            </div>
+            </div>
+             
+
+ 
+    </div>
+  
+
+
+
+      <script src="js/script.js"></script>
+      <script src="js/Quiestions.js"></script>
+  </body>
+</html>

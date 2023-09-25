@@ -1,0 +1,457 @@
+* {
+    background-color: #F1F1F1;
+}
+
+h1 {
+    background-color: white;
+}
+
+p {
+    background-color: white;
+}
+
+span {
+    background-color: white;
+}
+
+.header {
+    width: 320px;
+    height: 580px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+    transform: translate(-50%, -50%);
+    border-radius: 27px;
+    z-index: 1;
+      
+}
+.hidden{
+    display: none;
+    opacity: 0;
+}
+
+
+.header img {
+    width: 100%;
+    background-color: white;
+    border-top-left-radius: 48px;
+    border-top-right-radius: 48px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header h1 {
+    font-size: 18px;
+    font-family: serif;
+    font-weight: bold;
+    background-color: white;
+    padding: 0px 10px;
+
+}
+
+.header p {
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 25px;
+    font-weight: 300;
+    background-color: white;
+    padding: 0px 10px;
+    color: #5d5b5b
+}
+
+.header button {
+    background-color: rgb(224, 62, 21);
+    color: white;
+    float: right;
+    padding: 18px 33px;
+    border: none;
+    border-radius: 89px 0px 50px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.header button:hover {
+    background-color: rgb(51, 218, 218);
+    transition: 0.3s;
+}
+
+.Rules {
+    width: 320px;
+    height: 580px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+    transform: translate(-50%, -50%);
+    border-radius: 48px;
+    opacity: 0;
+    pointer-events: none;
+
+
+}
+
+.Rules.ActiveChange {
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+.Rules h1 {
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.Rules ol {
+    background-color: white;
+}
+
+.Rules ol li {
+    background-color: white;
+    line-height: 2.5rem;
+}
+
+.button-exti-start {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    border-radius: 48px;
+}
+
+.button-exti-start button {
+    border: none;
+    background-color: rgb(224, 62, 21);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 12px 50px;
+
+
+}
+
+.button-exti-start button:nth-child(1) {
+    border-radius: 0px 80px 0px 50px;
+
+}
+
+.button-exti-start button:nth-child(1):hover {
+    background-color: red;
+    transition: 0.5s;
+
+}
+
+.button-exti-start button:nth-child(2):hover {
+    background-color: rgb(40, 218, 218);
+    transition: 0.5s;
+
+}
+
+.button-exti-start button:nth-child(2) {
+    border-radius: 140px 0px 100px;
+
+}
+
+.Rules ol li span {
+    color: rgb(62, 62, 224);
+    background-color: white;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.Rules-border {
+    border: 1px solid #f3f0f0;
+}
+
+.html-quiz {
+    width: 320px;
+    height: 580px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+    transform: translate(-50%, -50%);
+    border-radius: 28px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.html-quiz.Activeques {
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+.html-quiz .html-quiz-time {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 48px;
+    padding-bottom: 0px;
+    align-items: center;
+}
+
+.html-quiz-time h1 {
+    font-size: 13px;
+    background-color: white;
+}
+
+.html-quiz-time .timeof {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.html-quiz-time .timeof h1 {
+    font-size: 15px;
+    background-color: #CCE5FF;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.html-quiz-time .timeof p {
+
+    background-color: black;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 3px;
+}
+
+.dynamic-time {
+    
+    height: 3px;
+    background-color: #3065D1;
+}
+
+.html-question span {
+    padding: 0px 15px;
+    font-size: 25px;
+    background-color: white;
+    line-height: 2.5rem;
+    font-family: serif;
+}
+
+.html-question {
+    background-color: white;
+    padding: 10px 15px;
+}
+
+.html-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+    width: 100%;
+    background-color: white;
+    margin: 20px 0px;
+
+}
+
+.html-list .options {
+    border: 1px solid #3065d154;
+    width: 87%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    background-color: #F0F8FF;
+    margin-bottom: 10px;
+    border-radius: 3px;
+
+}
+.html-list .options:hover{
+    background-color:#CCE5FF;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* .html-list .options:hover{
+    background-color: #CCE5FF;
+} */
+
+.html-list div span {
+    background-color: #F0F8FF;
+    font-size: 15px;
+    margin-left: 20px;
+
+}
+
+.html-footer {
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background-color: white;
+    border-top: 2px solid #ddd;
+    position: absolute;
+    bottom: 0px;
+    border-bottom-left-radius: 48px;
+    border-bottom-right-radius: 48px;
+
+
+}
+
+.next-que {
+    border: none;
+    background-color: rgb(224, 62, 21);
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 19px 34px;
+    border-radius: 90px 0px 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-family: sans-serif;
+    display: none;
+    
+}
+
+.ofnumber {
+    font-size: 20px;
+    background-color: white;
+    padding: 20px 0px;
+}
+
+.html-footer-dyna {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.options.correct {
+    background-color: #D4EDDA;
+    color: rgb(85, 134, 85);
+    border: 1px solid #D4EDDA;
+}
+
+.options.incorrect {
+    background-color: #F8D7DA;
+    color: #574042;
+    border: 1px solid #F8D7DA;
+}
+
+
+.tikIcon i {
+    background-color: #D4EDDA !important;
+    color: green;
+    padding-left: 15px;
+
+}
+
+.crossIcon i {
+    background-color: #F8D7DA !important;
+    color: rgb(211, 63, 63);
+    padding-left: 15px;
+
+
+}
+
+.disable {
+    pointer-events: none;
+}
+.result_box{
+    width: 320px;
+    height: 580px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+    transform: translate(-50%, -50%);
+    border-radius: 28px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8rem;
+    
+   
+}
+
+.result_image img{
+    width: 100%;
+    height: 170px;
+    
+    background-color: white;
+}
+
+.result_content h1{
+    font-size: 20px;
+    margin: 0px;
+    padding: 10px 0px;
+}
+.result_content span{
+    font-size: 16px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+   
+}
+.result_content span p{
+    font-weight: bolder;
+}
+.result-btn{
+      padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.result-btn button{
+    cursor: pointer;
+    border: none;
+    background-color: tomato;
+    padding: 14px 20px;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s ease;
+
+}
+.result-btn .replay:hover{
+    background-color: rgb(48, 197, 197);
+}
+.result-btn .quit:hover{
+    background-color: red;
+    transition: 0.3s ease;
+}
+.result_box .dis{
+    display: none;
+}
+
